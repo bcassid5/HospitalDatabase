@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Database</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<H1>Hospital Database</H1>
+<h2 id="header2"></h2>
+<p id="paragraph1"></p>
+<br/>
+<div id="loginForm">
+    <input type="text" id="user" placeholder="enter username">
+    <br/>
+    <input type="password" id="pass" placeholder="enter password">
+    <br/>
+    <button type="button" onclick="myLoginClick()">Login</button>
+</div>
+
+<div id="choices" style="visibility: hidden">
+    <button type="button" onclick="getPatientsInHospital()">Function 1: Patients Currently Admitted</button>
+    <button type="button" onclick="displayPatientRecordsScreen()">Function 2: Patient's Records</button>
+    <button type="button" onclick="getMostInHospital()">Function 3: Most Frequent Patient</button>
+    <button type="button" onclick="dischargePatientDisplay()">Function 4: Discharge a Patient</button>
+    <button type="button" onclick="displayAddPatientScreen()">Function 5: Add New Patient</button>
+    <button type="button" onclick="findPatient()">Function 6: Search for Patient</button>
+    <button type="button" onclick="logOut()">Log out</button>
+</div>
+
+<div id="current" style="visibility: hidden">
+    <br/><br/>
+    <table id="currentTable"></table>
+</div>
+
+<div id="most" style="visibility: hidden">
+    <br/><br/>
+    <table id="mostTable"></table>
+</div>
+
+<div id="addPatient" style="visibility: hidden">
+    <br/><br/>
+    <input type="text" id="fName" placeholder="enter first name">
+    <input type="text" id="lName" placeholder="enter last name">
+    <input type="text" id="gender" placeholder="enter gender">
+    <input type="type" id="email" placeholder="enter email">
+    <input type="text" id="street" placeholder="enter street">
+    <input type="text" id="city" placeholder="enter city">
+    <input type="text" id="postcode" placeholder="enter postcode" maxlength="5">
+    <button type="button" onclick="addNewPatient()">Add</button>
+    <p id="addConfirmation"></p>
+</div>
+
+<div id="getPatient" style="visibility: hidden">
+    <input type="text" id="fNamePatient" placeholder="enter first name">
+    <input type="text" id="lNamePatient" placeholder="enter last name">
+    <button type="button" onclick="getPatient()">Search</button>
+    <p id="patientNotFound"></p>
+    <br/><br/>
+    <table id="patientInformationTable"></table>
+</div>
+
+<div id="dischargePatient" style="visibility: hidden">
+    <input type="text" id="fNameD" placeholder="enter first name">
+    <input type="text" id="lNameD" placeholder="enter last name">
+    <input type="text" id="dischargeDate" placeholder="enter discharge date">
+    <button type="button" onclick="dischargePatient()">Discharge</button>
+    <p id="patientNotFoundD"></p>
+    <p id="patientDischargedConfirmation"></p>
+
+</div>
+
+<div id="patientRecords" style="visibility: hidden">
+    <input type="text" id="fNamePR" placeholder="enter first name">
+    <input type="text" id="lNamePR" placeholder="enter last name">
+    <button type="button" onclick="viewRecords()">View Records</button>
+    <p id="patientNotFoundPR"></p>
+    <br/><br/>
+    <p id="patientNameDisplay"></p>
+    <table id="patientRecordsTable"></table>
+</div>
+
+</body>
+</html>

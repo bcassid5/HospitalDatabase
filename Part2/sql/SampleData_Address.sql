@@ -1,0 +1,10 @@
+insert into Address (street, city, postcode) values ('6888 Spohn Lane', 'Shuitai', 79240);
+insert into Address (street, city, postcode) values ('4194 Toban Lane', 'Lovas', 20000);
+insert into Address (street, city, postcode) values ('817 Summerview Point', 'Hanchang', 17575);
+insert into Address (street, city, postcode) values ('5069 Glacier Hill Street', 'Badian', 53534);
+insert into Address (street, city, postcode) values ('1 Hermina Terrace', 'Austin', 60088);
+insert into Address (street, city, postcode) values ('29590 Lien Lane', 'Nanshi', 49780);
+insert into Address (street, city, postcode) values ('5 Charing Cross Way', 'Souto da Costa', 14599);
+insert into Address (street, city, postcode) values ('3797 Thompson Hill', 'Wuyang', 39999);
+insert into Address (street, city, postcode) values ('80 Lunder Way', 'Boca do Acre', 69316);
+insert into Address (street, city, postcode) values ('186 Hallows Trail', 'Nahiyat Ghammas', 21342);

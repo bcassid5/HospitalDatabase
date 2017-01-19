@@ -1,0 +1,11 @@
+insert into Department (departmentName) values ('Cardiology');
+insert into Department (departmentName) values ('Critical Care');
+insert into Department (departmentName) values ('Maternity');
+insert into Department (departmentName) values ('Neurology');
+insert into Department (departmentName) values ('Gastroenterology');
+insert into Department (departmentName) values ('Oncology');
+insert into Department (departmentName) values ('Physiotherapy');
+insert into Department (departmentName) values ('Rheumtology');
+insert into Department (departmentName) values ('Surgery');
+insert into Department (departmentName) values ('Gynaecology');
+insert into Department (departmentName) values ('Ear Nose Throat');
